@@ -25,53 +25,6 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-from image.edit_1 import (  # pylint:disable=import-error
-    bright,
-    mix,
-    black_white,
-    g_blur,
-    normal_blur,
-    box_blur,
-)
-from image.edit_2 import (  # pylint:disable=import-error
-    circle_with_bg,
-    circle_without_bg,
-    sticker,
-    edge_curved,
-    contrast,
-    sepia_mode,
-    pencil,
-    cartoon,
-)
-from image.edit_3 import (  # pylint:disable=import-error
-    green_border,
-    blue_border,
-    black_border,
-    red_border,
-)
-from image.edit_4 import (  # pylint:disable=import-error
-    rotate_90,
-    rotate_180,
-    rotate_270,
-    inverted,
-    round_sticker,
-    removebg_white,
-    removebg_plain,
-    removebg_sticker,
-)
-from image.edit_5 import (  # pylint:disable=import-error
-    normalglitch_1,
-    normalglitch_2,
-    normalglitch_3,
-    normalglitch_4,
-    normalglitch_5,
-    scanlineglitch_1,
-    scanlineglitch_2,
-    scanlineglitch_3,
-    scanlineglitch_4,
-    scanlineglitch_5,
-)
-
 BUTTONS = {}
 SPELL_CHECK = {}
 
@@ -118,10 +71,10 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🎥{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🔮{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"🎥{get_size(file.file_size)}",
+                    text=f"🔮{get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -155,8 +108,8 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("⭕️ ɢʀᴏᴜᴘ ⭕️", url="https://t.me/cinemaenglish123"),
-                InlineKeyboardButton("⭕️ ᴅᴇᴠ ⭕️", url="https://t.me/abhisheksvlog")
+                InlineKeyboardButton("⭕️ ɢʀᴏᴜᴘ ⭕️", url="https://t.me/ML_MOVIE_LOKAM"),
+                InlineKeyboardButton("⭕️ ᴅᴇᴠ ⭕️", url="https://t.me/Bad_Bunny_444")
             ])
 
     btn.insert(0, [
@@ -700,10 +653,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ʜᴇʀᴇ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/ABHISHEKSVLOG'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/MovieHubOfficialGroup')
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Bad_Bunny_444'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/ML_MOVIE_LOKAM')
             ],[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ', url='https://t.me/Justaupdatechannel'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ', url='https://t.me/ML_MOVIE_LOKAM'),
             ],[
             InlineKeyboardButton('✗ ᴄʟᴏsᴇ ᴛʜᴇ ᴍᴇɴᴜ ✗', callback_data='close_data')
         ]]
