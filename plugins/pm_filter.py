@@ -25,6 +25,53 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
+from image.edit_1 import (  # pylint:disable=import-error
+    bright,
+    mix,
+    black_white,
+    g_blur,
+    normal_blur,
+    box_blur,
+)
+from image.edit_2 import (  # pylint:disable=import-error
+    circle_with_bg,
+    circle_without_bg,
+    sticker,
+    edge_curved,
+    contrast,
+    sepia_mode,
+    pencil,
+    cartoon,
+)
+from image.edit_3 import (  # pylint:disable=import-error
+    green_border,
+    blue_border,
+    black_border,
+    red_border,
+)
+from image.edit_4 import (  # pylint:disable=import-error
+    rotate_90,
+    rotate_180,
+    rotate_270,
+    inverted,
+    round_sticker,
+    removebg_white,
+    removebg_plain,
+    removebg_sticker,
+)
+from image.edit_5 import (  # pylint:disable=import-error
+    normalglitch_1,
+    normalglitch_2,
+    normalglitch_3,
+    normalglitch_4,
+    normalglitch_5,
+    scanlineglitch_1,
+    scanlineglitch_2,
+    scanlineglitch_3,
+    scanlineglitch_4,
+    scanlineglitch_5,
+)
+
 BUTTONS = {}
 SPELL_CHECK = {}
 
@@ -108,8 +155,8 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("⭕️ ɢʀᴏᴜᴘ ⭕️", url="https://t.me/ML_MOVIE_LOKAM"),
-                InlineKeyboardButton("⭕️ ᴅᴇᴠ ⭕️", url="https://t.me/Bad_Bunny_444")
+                InlineKeyboardButton("⭕️ ɢʀᴏᴜᴘ ⭕️", url="https://t.me/cinemaenglish123"),
+                InlineKeyboardButton("⭕️ ᴅᴇᴠ ⭕️", url="https://t.me/abhisheksvlog")
             ])
 
     btn.insert(0, [
@@ -374,59 +421,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                msg1 = await query.message.reply(
-
-                f'<b>Hey 👋{query.from_user.mention}\n\n'
-
-                f'<b>📫 Yᴏʀ Fɪʟᴇ ɪꜱ Rᴇᴀᴅʏ 👇\n\n'
-
-                f'<b>🎬 Mᴏᴠɪᴇ Nᴀᴍᴇ: {title}</b>\n\n'
-
-                f'<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ: {size}</b>\n\n'
-
-                f'<b>📂 Mᴏᴠɪᴇ Tʏᴘᴇ: {type}</b>\n\n'
-
-                '<code>THis file will be deleted in 5 minutes.!</code>',
-
-                True,
-
-                'html',
-
-                reply_markup=InlineKeyboardMarkup(
-
-                    [
-
-                        [
-
-                            InlineKeyboardButton("🔰𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐍𝐎𝐖🔰", url = ms.link)
-
-                        ],
-
-                        [
-
-                            InlineKeyboardButton("⚠️ 𝐂𝐚𝐧'𝐭 𝐀𝐜𝐜𝐞𝐬𝐬❓𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 ⚠️", url = f"{CH_LINK}")
-
-                        ]
-
-                    ]
-
-                )
-
-            )
-
-            await query.answer('Check Out The Chat',show_alert=True)
-
-            await asyncio.sleep(1000)
-
-            await msg1.delete()
-
-            await msg.delete()
-
-            del msg1, msg
- except Exception as e:
-            logger.exception(e, exc_info=True)
-            await query.answer(f"Check "ML MOVIE GROUP" For Your File", True)
-
+                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+        except UserIsBlocked:
+            await query.answer('You Are Blocked to use me', show_alert=True)
+        except PeerIdInvalid:
+            await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+        except Exception as e:
+            await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
             await query.answer("I Like Your Smartness, But Don't Be Oversmart Okay", show_alert=True)
@@ -919,9 +920,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(query.from_user.mention),
+            text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html',
+            parse_mode='html'
         )
     elif query.data == "shazam":
         buttons = [[
