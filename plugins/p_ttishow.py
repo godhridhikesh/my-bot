@@ -58,7 +58,7 @@ async def save_group(bot, message):
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Give me a chat id')
+        return await message.reply('Chat id താടെ')
     chat = message.command[1]
     try:
         chat = int(chat)
@@ -71,7 +71,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>Hello Friends, \nഎന്റെ admin എന്നോട് ഈ ഗ്രൂപ്പിൽ നിന്നു ഇറങ്ങാൻ പറഞ്ഞു so ഞാൻ പോകുവാൻ bye! എന്നെ ഇനിയും ഗ്രൂപ്പിൽ add ചെയ്യണം എങ്കിൽ എന്റെ അഡ്മിനും ആയി ബന്ധപ്പെടുക.</b>',
             reply_markup=reply_markup,
         )
 
@@ -110,7 +110,7 @@ async def disable_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \nഎന്റെ admin എന്നോട് ഈ ഗ്രൂപ്പിൽ നിന്നു ഇറങ്ങാൻ പറഞ്ഞു so ഞാൻ പോകുവാൻ bye! എന്നെ ഇനിയും ഗ്രൂപ്പിൽ add ചെയ്യണം എങ്കിൽ എന്റെ അഡ്മിനും ആയി ബന്ധപ്പെടുക.</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
@@ -198,7 +198,7 @@ async def ban_a_user(bot, message):
             return await message.reply(f"{k.mention} is already banned\nReason: {jar['ban_reason']}")
         await db.ban_user(k.id, reason)
         temp.BANNED_USERS.append(k.id)
-        await message.reply(f"Successfully banned {k.mention}")
+        await message.reply(f"അവനെ ban ചെയ്തു {k.mention}")
 
 
     
@@ -212,7 +212,7 @@ async def unban_a_user(bot, message):
         chat = message.text.split(None, 2)[1]
     else:
         chat = message.command[1]
-        reason = "No reason Provided"
+        reason = "Just for a resam 😜"
     try:
         chat = int(chat)
     except:
@@ -228,10 +228,10 @@ async def unban_a_user(bot, message):
     else:
         jar = await db.get_ban_status(k.id)
         if not jar['is_banned']:
-            return await message.reply(f"{k.mention} is not yet banned.")
+            return await message.reply(f"{k.mention} ഇതുവരെ ban ആയിട്ടില്ല വേണേൽ ചെയാം.")
         await db.remove_ban(k.id)
         temp.BANNED_USERS.remove(k.id)
-        await message.reply(f"Successfully unbanned {k.mention}")
+        await message.reply(f"അവനെ unban ചെയ്തു {k.mention}")
 
 
     
