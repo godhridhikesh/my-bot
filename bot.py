@@ -25,7 +25,6 @@ class Bot(Client):
             workers=50,
             plugins={"root": "plugins"},
             sleep_threshold=5,
-            parse_mode="html",
         )
 
     async def start(self):
@@ -36,7 +35,6 @@ class Bot(Client):
         await Media.ensure_indexes()
         me = await self.get_me()
         temp.ME = me.id
-        temp.MENTION = me.mention
         temp.U_NAME = me.username
         temp.B_NAME = me.first_name
         self.username = '@' + me.username
@@ -45,7 +43,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        logging.info("Bot stopped. Bye.")
+        logging.info("Rebooting Tiger Shroff Activating UI Rebooted")
 
 
 app = Bot()
