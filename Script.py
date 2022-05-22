@@ -4,6 +4,7 @@ class script(object):
 ✴️ 𝙈𝙖𝙠𝙚 𝙈𝙚 𝘼𝙨 𝘼𝙙𝙢𝙞𝙣
 ✴️ 𝙄 𝙒𝙄𝙇𝙇 𝙋𝙧𝙤𝙫𝙞𝙙𝙚 𝙈𝙊𝙑𝙄𝙀𝙎 𝙏𝙝𝙚𝙧𝙚
 ✴️𝙏𝙝𝙚𝙣 𝙎𝙚𝙚 𝙈𝙮 𝙋𝙤𝙬𝙚𝙧𝙨 𝙊𝙣 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥✨️
+
 ©️ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy @Bad_Bunny_444
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 """
@@ -26,8 +27,7 @@ class script(object):
 <b>Command</b>
 - /stickerid - 𝖦𝖾𝗍 𝖨𝖣
 """
-    ABOUT_TXT = """
-𝐌𝐲 𝐍𝐚𝐦𝐞 : <a href=https://t.me/{}>{}</a> 
+    ABOUT_TXT = """𝐌𝐲 𝐍𝐚𝐦𝐞 : {} 
 
 🦁𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : <a href=https://t.me/Bad_Bunny_444>ᵀʰᵉ вα∂ вυηηу 🇮🇳/🇬🇧</a>
 
@@ -44,7 +44,8 @@ class script(object):
 🌀𝐁𝐮𝐢𝐥𝐝 s𝐭𝐚𝐭𝐮𝐬 : 𝐕2.1 [𝐁𝐄𝐓𝐀]
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- This is a closed source project.   
+- This is a closed source project.
+-If u need the source code you can ask to my owner.   
 
 CODES:
 1. Auto Filter
