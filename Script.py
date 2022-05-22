@@ -50,7 +50,8 @@ class script(object):
 CODES:
 1. Auto Filter
 2. Group Managing
-3. Filter 
+3. Unlimited filter
+4. Song 
 """
     TTS_TXT = """<b>TEXT TO SPEACH</b>
 Simple Telegram Text-To-Speech Module.
