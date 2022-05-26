@@ -31,7 +31,7 @@ class script(object):
 """
     ABOUT_TXT = """𝐌𝐲 𝐍𝐚𝐦𝐞 : {}
 
-🦁 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : <a href=https://t.me/nishn_ea>ᵀʰᵉ вα∂ вυηηу 🇮🇳/🇬🇧</a>
+🦁 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : <a href=https://t.me/nishn_ea>نشان ×</a>
 
 🌀 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : 𝐏𝐲𝐭𝐡𝐨𝐧
 
