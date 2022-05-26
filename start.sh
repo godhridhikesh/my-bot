@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Probotmaker8/stella-bot/stella-bot.git /stella-bot
+  git clone https://github.com/Probotmaker8/stella-bot.git /stella-bot
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /stella-bot
