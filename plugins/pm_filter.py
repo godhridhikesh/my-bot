@@ -333,7 +333,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif "alertmessage" in query.data:
         grp_id = query.message.chat.id
         i = query.data.split(":")[1]
-        keyword = query.data.split(":")[2]
+        keyword = query.data.split(":")[3]
         reply_text, btn, alerts, fileid = await find_filter(grp_id, keyword)
         if alerts is not None:
             alerts = ast.literal_eval(alerts)
