@@ -332,7 +332,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif "alertmessage" in query.data:
         grp_id = query.message.chat.id
-        i = query.data.split(":")[1]
+        i = query.data.split(":")[3]
         keyword = query.data.split(":")[3]
         reply_text, btn, alerts, fileid = await find_filter(grp_id, keyword)
         if alerts is not None:
@@ -342,7 +342,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(alert, show_alert=True)
 
     if query.data.startswith("file"):
-        ident, file_id, rid = query.data.split("#")
+        ident, file_id, rid = query.data.split("3")
 
         if int(rid) not in [query.from_user.id, 0]:
             return await query.answer(UNAUTHORIZED_CALLBACK_TEXT, show_alert=True)
