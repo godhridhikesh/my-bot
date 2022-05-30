@@ -73,13 +73,13 @@
             "required": false
         },
         "START_IMAGE_URL":{
-            "description": "Start image URL. Defaults to https://telegra.ph/Fc-05-30",
-            "value": "https://telegra.ph/Fc-05-30.jpg",
+            "description": "Start image URL. Defaults to https://telegra.ph/Mandan-subru-05-30",
+            "value": "https://telegra.ph/Mandan-subru-05-30",
             "required": false
         },
         "UNAUTHORIZED_CALLBACK_TEXT":{
             "description": "Text to show when unauthorized user tries to use bot. Defaults to 'oKda' (200 Char Limit).",
-            "value": "oKda",
+            "value": "appo sheri😏👋🏻",
             "required": false
         },
         "REDIRECT_TO":{
