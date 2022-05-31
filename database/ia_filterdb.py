@@ -89,21 +89,7 @@ async def get_search_results(query, file_type=None, max_results=10, offset=0, fi
         return []
 
     if USE_CAPTION_FILTER:
-        filter = {'$or': [{'file_name': regex}, {'caption': """<b>🏷 Title</b>: <a href={url}>{title}</a>
-        🎭 Genres: {genres}
-        📆 Year: <a href={url}/releaseinfo>{year}</a>
-        🌟 Rating: <a href={url}/ratings>{rating}</a> / 10
-
-
-        ------------🖤------------
-
-        🎞ᴄʜᴀɴɴᴇʟ - @CinemaVeedMovies
-                                ⛕ 
-        👥ɢʀᴏᴜᴘ    - @CinemaVeed
-
-        🔗 > 𝘑𝘰𝘪𝘯
-        🔗 > 𝘚𝘩𝘢𝘳𝘦
-        🔗 > 𝘚𝘶𝘱𝘱𝘰𝘳𝘵}]}
+        filter = {'$or': [{'file_name': regex}, {'caption': regex}]}
     else:
         filter = {'file_name': regex}
 
