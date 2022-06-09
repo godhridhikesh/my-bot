@@ -169,7 +169,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴 💌')
+            k = await query.message.edit(' 𝖳𝗁𝗂𝗌 𝖬𝗈𝗏𝗂𝖾 𝖨𝗌 𝖭𝗈𝗍 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝖽 𝖮𝗋 𝖠𝖽𝖽𝖾𝖽 𝖳𝗈 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾🙁')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -397,7 +397,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('𝑪𝒉𝒆𝒄𝒌 𝒀𝒐𝒖𝒓 𝑷𝑴🤓', show_alert=True)
+                await query.answer('𝖭𝗈𝗐 𝖢𝗁𝖾𝖼𝗄 𝖸𝗈𝗎𝗋 𝖯𝗆🤓!!', show_alert=True)
         except UserIsBlocked:
             await query.answer('You Are Blocked to use me', show_alert=True)
         except PeerIdInvalid:
@@ -684,9 +684,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✗ ᴄʟᴏsᴇ ᴛʜᴇ ᴍᴇɴᴜ ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -718,9 +718,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(text="𝖢𝗅𝗈𝗌𝖾", callback_data="close_data")
         ]]
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -890,9 +890,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴄʟᴏsᴇ ✗', callback_data='close_data'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -905,9 +905,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -921,9 +921,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -937,9 +937,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -953,9 +953,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -969,9 +969,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -985,9 +985,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
+        m=await query.message.reply_text("■□□")
+        n=await m.edit("■■□")
+        o=await n.edit("■■■")
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
@@ -2255,36 +2255,36 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if settings is not None:
             buttons = [
                 [
-                    InlineKeyboardButton('𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐔𝐓𝐓𝐎𝐍',
+                    InlineKeyboardButton('ғɪʟᴛᴇʀ ʙᴜᴛᴛᴏɴ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('𝐒𝐈𝐍𝐆𝐋𝐄' if settings["button"] else '𝐃𝐎𝐔𝐁𝐋𝐄',
+                    InlineKeyboardButton('sɪɴɢʟᴇ' if settings["button"] else 'ᴅᴏᴜʙʟᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('𝐁𝐎𝐓 𝐏𝐌', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["botpm"] else '🗑️ 𝐍𝐎',
+                    InlineKeyboardButton('ʙᴏᴛ ᴘᴍ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
+                    InlineKeyboardButton('✅ ʏᴇs' if settings["botpm"] else '🗑️ ɴᴏ',
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('𝐅𝐈𝐋𝐄 𝐒𝐄𝐂𝐔𝐑𝐄',
+                    InlineKeyboardButton('ғɪʟᴇ sᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["file_secure"] else '❌ 𝐍𝐎',
+                    InlineKeyboardButton('✅ ʏᴇs' if settings["file_secure"] else '❌ ɴᴏ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('𝐈𝐌𝐃𝐁', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["imdb"] else '❌ 𝐍𝐎',
+                    InlineKeyboardButton('ɪᴍᴅʙ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
+                    InlineKeyboardButton('✅ ʏᴇs' if settings["imdb"] else '❌ ɴᴏ',
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('𝐒𝐏𝐄𝐋𝐋 𝐂𝐇𝐄𝐂𝐊',
+                    InlineKeyboardButton('sᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["spell_check"] else '❌ 𝐍𝐎',
+                    InlineKeyboardButton('✅ ʏᴇs' if settings["spell_check"] else '❌ ɴᴏ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('𝐖𝐄𝐋𝐂𝐎𝐌𝐄', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["welcome"] else '❌ 𝐍𝐎',
+                    InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
+                    InlineKeyboardButton('✅ ʏᴇs' if settings["welcome"] else '❌ ɴᴏ',
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ]
             ]
@@ -2346,14 +2346,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="ɴᴇxᴛ 🛡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="🎀 ᴊᴏɪɴ ᴏᴜʀ ᴄᴀɴɴᴇʟ 🎀",url="https://t.me/Justaupdatechannel")]
+            [InlineKeyboardButton(text="🎀 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ 🎀",url="https://t.me/CinemaVeedMovies")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="💠 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="🎀 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ 🎀",url="https://t.me/JUSTAUPDATECHANNEL")]
+            [InlineKeyboardButton(text="🎀 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ 🎀",url="https://t.me/CinemaVeedMovies")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -2392,7 +2392,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hᴇʏ😚 {message.from_user.mention}</b>👋🏻\n<b>🔍 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ǫᴜᴇʀʏ ʀᴇsᴜʟᴛ</b>: <code>{search}</code>\n<b>© Pᴏᴡᴇʀᴇᴅ ʙʏ </b>: <b><a href=https://t.me/MovieHubOfficialGroup>{message.chat.title}</a></b>\nㅤㅤㅤㅤ\n<b><u> Tʜɪs ᴍᴇssᴀɢᴇ ᴡᴀs ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 15 ᴍɪɴᴜᴛᴇs . Tᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.</b></u>"
+        cap = f"<b>Hᴇʏ😚 {message.from_user.mention}</b>👋🏻\n<b>🔍 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ǫᴜᴇʀʏ ʀᴇsᴜʟᴛ</b>: <code>{search}</code>\n<b>© Pᴏᴡᴇʀᴇᴅ ʙʏ </b>: <b><a href=https://t.me/CinemaVeed>{message.chat.title}</a></b>\nㅤㅤㅤㅤ\n<b><u> Tʜɪs ᴍᴇssᴀɢᴇ ᴡᴀs ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 15 ᴍɪɴᴜᴛᴇs . Tᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.</b></u>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
