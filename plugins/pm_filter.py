@@ -62,7 +62,7 @@ async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("Man Search Your Self why Others??", show_alert=True)
+        return await query.answer("𝖲𝗐𝖺𝗇𝗍𝗁𝖺𝗆𝖺𝗒𝗂 𝖲𝖾𝖺𝗋𝖼𝗁 𝖢𝗁𝖾𝗒𝗒🥱!!!", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -169,7 +169,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit(' 𝖳𝗁𝗂𝗌 𝖬𝗈𝗏𝗂𝖾 𝖨𝗌 𝖭𝗈𝗍 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝖽 𝖮𝗋 𝖠𝖽𝖽𝖾𝖽 𝖳𝗈 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾🙁')
+            k = await query.message.edit(' 𝖳𝗁𝗂𝗌 𝖬𝗈𝗏𝗂𝖾 𝖨𝗌 𝖭𝗈𝗍 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝖽 𝖮𝗋 𝖠𝖽𝖽𝖾𝖽 𝖳𝗈 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾☹️'!!!)
             await asyncio.sleep(10)
             await k.delete()
 
@@ -397,7 +397,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('𝖭𝗈𝗐 𝖢𝗁𝖾𝖼𝗄 𝖸𝗈𝗎𝗋 𝖯𝗆🤓!!', show_alert=True)
+                await query.answer('𝖭𝗈𝗐 𝖢𝗁𝖾𝖼𝗄 𝖸𝗈𝗎𝗋 𝖯𝗆!!🥱', show_alert=True)
         except UserIsBlocked:
             await query.answer('You Are Blocked to use me', show_alert=True)
         except PeerIdInvalid:
