@@ -45,7 +45,7 @@ Wᴇʟʟ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴀᴛ ᴍʏ ɢʀᴏᴜᴘ sᴏ ʏᴏᴜ ᴄ�
 🌀 ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.1 [ʙᴇᴛᴀ]
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- Sorry Broh This is a closed source project.   
+<a href=https://t.me/naaleaavatte/4>Tape Here</a>   
 
 CODES:
 1. Auto Filter
