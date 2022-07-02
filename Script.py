@@ -6,7 +6,7 @@ class script(object):
 ✴️ ɪ ᴡɪʟʟ ᴩʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇꜱ ᴛʜᴇʀᴇ
 ✴️ᴛʜᴇ ꜱᴇᴇ ᴍy ᴩᴏᴡᴇʀꜱ ɪɴ yᴏᴜʀ ɢʀᴏᴜᴩ😎
 
-©️ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy : @nishn_ea 🙂
+©️ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy : @mr_perfect_07 🦸🏻‍♂️
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 """
@@ -31,7 +31,7 @@ class script(object):
 """
     ABOUT_TXT = """𝐌𝐲 𝐍𝐚𝐦𝐞 : {}
 
-🦁 ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/nishn_ea>نشان ×</a>
+🦁 ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/mr_perfect_07>Zᴇɴɪᴛsᴜ⚡</a>
 
 🌀 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ
 
@@ -46,7 +46,7 @@ class script(object):
 🌀 ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.1 [ʙᴇᴛᴀ]
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- This is a closed source project.   
+- Sorry Broh This is a closed source project.   
 
 CODES:
 1. Auto Filter
