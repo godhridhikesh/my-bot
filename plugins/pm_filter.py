@@ -669,7 +669,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('❤️‍🔥ᴀʙᴏᴜᴛ ᴍᴀsᴛᴇʀ', url=f'https://t.me/aboutme_offline')
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴀsᴛᴇʀ', url=f'https://t.me/aboutme_offline')
             ],[
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -875,7 +875,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('❤️‍🔥ᴀʙᴏᴜᴛ ᴍᴀsᴛᴇʀ', url=f'https://t.me/aboutme_offline')
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴀsᴛᴇʀ', url=f'https://t.me/aboutme_offline')
             ],[
             InlineKeyboardButton('ғɪʟᴇ sᴛᴀᴛᴜs', callback_data='stats'),
             InlineKeyboardButton('sᴏᴜʀᴄᴇ', url=f'https://t.me/naaleaavatte/4')
