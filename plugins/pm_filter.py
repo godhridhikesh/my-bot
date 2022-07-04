@@ -131,7 +131,7 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("📍 ᴛɪᴘs 📍", callback_data='tip',show_alert=true),
+                InlineKeyboardButton("📍 ᴛɪᴘs 📍", callback_data='tip', show_alert=True),
                 InlineKeyboardButton("👨🏻‍💻 ʙᴏss 👨🏻‍💻", url="https://t.me/aboutme_offline")
             ])
 
